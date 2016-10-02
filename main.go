@@ -49,6 +49,8 @@ func cellHandler(resp http.ResponseWriter, req *http.Request) {
 		log.Println(req.Method + ": " + req.URL.String())
 	}()
 
+	resp.Header().Set("Access-Control-Allow-Origin", "*")
+
 	if req.Method != "POST" {
 		resp.Header().Set("status", "405")
 		fmt.Fprintln(resp, "405 only takes post")
