@@ -41,6 +41,10 @@ type MsgResp struct {
 }
 
 func cellHandler(resp http.ResponseWriter, req *http.Request) {
+	resp.Header().Set("Access-Control-Allow-Origin", "*")
+	resp.Header().Add("Access-Control-Allow-Headers", "Content-Type")
+	resp.Header().Add("Access-Control-Allow-Methods", "POST")
+
 	defer func() {
 		if r := recover(); r != nil {
 			resp.Header().Set("status", "500")
@@ -48,8 +52,6 @@ func cellHandler(resp http.ResponseWriter, req *http.Request) {
 		}
 		log.Println(req.Method + ": " + req.URL.String())
 	}()
-
-	resp.Header().Set("Access-Control-Allow-Origin", "*")
 
 	if req.Method != "POST" {
 		resp.Header().Set("status", "405")
