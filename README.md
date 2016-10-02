@@ -17,3 +17,6 @@ Make a post request with a json object containing an initial vector, height and 
 ```
 
 This will return a matrix with the width of the initial vector and the given height.
+
+## License
+MIT
