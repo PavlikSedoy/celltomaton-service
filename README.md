@@ -1,9 +1,7 @@
 # celltomaton-service
+Used to deploy celltomaton as a service using docker containers.
 
-## About
-used to deploy celltomaton as a service using docker containers
-
-may be reachable on [celltomaton.eah.space](http://celltomaton.eah.space)
+Service may be reachable on [celltomaton.eah.space](http://celltomaton.eah.space).
 
 ## Usage
 Make a post request with a json object containing an initial vector, height and rule.
