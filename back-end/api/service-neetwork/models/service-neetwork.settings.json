@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_neetworks",
+  "info": {
+    "name": "serviceNeetwork",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "services": {
+      "via": "service_neetwork",
+      "collection": "services"
+    },
+    "neetworkName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

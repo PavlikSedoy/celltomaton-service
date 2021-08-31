@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/service-neetworks",
+      "handler": "service-neetwork.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/service-neetworks/count",
+      "handler": "service-neetwork.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/service-neetworks/:id",
+      "handler": "service-neetwork.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/service-neetworks",
+      "handler": "service-neetwork.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/service-neetworks/:id",
+      "handler": "service-neetwork.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/service-neetworks/:id",
+      "handler": "service-neetwork.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_vt_work_times",
+  "info": {
+    "name": "work_time",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "pn": {
+      "type": "time"
+    },
+    "vt": {
+      "type": "time"
+    },
+    "sr": {
+      "type": "time"
+    },
+    "cht": {
+      "type": "time"
+    },
+    "pt": {
+      "type": "time"
+    },
+    "sb": {
+      "type": "time"
+    },
+    "vs": {
+      "type": "time"
+    }
+  }
+}
