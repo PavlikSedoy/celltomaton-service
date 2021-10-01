@@ -111,8 +111,8 @@
       "required": true
     },
     "device_types": {
-      "collection": "device-types",
       "via": "services",
+      "collection": "device-types",
       "dominant": true
     },
     "photos": {
@@ -137,6 +137,20 @@
     "service_neetwork": {
       "via": "services",
       "model": "service-neetwork"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "reviews": {
+      "via": "service",
+      "collection": "reviews"
     }
   }
 }
